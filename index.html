@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Train Time</title>
+
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <link href="https://fonts.googleapis.com/css?family=Rozha+One" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/javascript/app.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1 class="jumbotron header">Chugga Chugga Choo Choo
+                    <br>Here's a Train Schedule for You!</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card mx-auto schedule">
+                    <div class="card-header schedule_header">
+                        <h3>Current Train Schedule</h3>
+                    </div>
+
+                    <table class="table schedule-table">
+                        <thead class="schedule-table-header">
+                            <tr>
+                                <td>Train Name</td>
+                                <td>Destination</td>
+                                <td>Frequency (min)</td>
+                                <td>Next Arrival</td>
+                                <td>Minutes Away</td>
+                            </tr>
+                        </thead>
+                        <tbody class="schedule-table-body">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card mx-auto user_form">
+                    <div class="card-header schedule_header">
+                        <h3>Add Train</h3>
+                    </div>
+                    <p class="form_paragraph">Train Name</p>
+                    <input class="form_input" type="text" id="train_name">
+                    <p class="form_paragraph">Destination</p>
+                    <input class="form_input" type="text" id="destination">
+                    <p class="form_paragraph">First Train Time (24 Hour Clock)</p>
+                    <input class="form_input" type="text" id="first_train">
+                    <p class="form_paragraph">Frequency (Minutes)</p>
+                    <input class="form_input" type="text" id="frequency">
+                    <button class="btn btn-primary" id="form_button">Submit</button>
+                </div>
+            </div>
+
+
+</body>
+
+</html>
