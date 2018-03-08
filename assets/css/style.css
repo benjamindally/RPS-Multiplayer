@@ -30,6 +30,15 @@ body {
   );
 }
 
+thead {
+  font-size: 140%;
+}
+
+.user_form {
+  border: 1px solid black;
+  margin-bottom: 50px;
+}
+
 .form_paragraph {
   padding: 8px 0px 0px 15px;
 }
